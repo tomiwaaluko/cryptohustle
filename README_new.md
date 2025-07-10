@@ -75,11 +75,15 @@ The app fetches live data from the CryptoCompare API to provide up-to-date infor
    ```
 
 3. **Set up environment variables**
-
-   Create a `.env` file in the root directory:
-
+   
+   Copy the example environment file and add your API key:
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Then edit the `.env` file and replace `your_cryptocompare_api_key_here` with your actual API key:
    ```env
-   VITE_APP_API_KEY=your_cryptocompare_api_key_here
+   VITE_APP_API_KEY=your_actual_api_key_here
    ```
 
 4. **Start the development server**
@@ -114,7 +118,9 @@ crypto-hustle/
 │   ├── App.css               # Styling and animations
 │   ├── index.css             # Global styles
 │   └── main.jsx              # Application entry point
-├── .env                      # Environment variables
+├── .env                      # Environment variables (not in repo)
+├── .env.example              # Environment variables template
+├── .gitignore                # Git ignore rules
 ├── package.json              # Dependencies and scripts
 └── README.md                 # This file
 ```
